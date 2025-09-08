@@ -13,7 +13,7 @@ $(NAME): $(OBJECTS)
 	$(CPP) $(CPP_FLAGS) $(OBJECTS) -o $(NAME)
 
 %.o: %.cpp
-	$(CPP) $(CPP_FLAGS) -c $(CPP_FLAGS) $< -o $@
+	$(CPP) $(CPP_FLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS)
