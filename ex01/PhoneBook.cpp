@@ -46,6 +46,8 @@ std::string	PhoneBook::_setField(const std::string &name, bool checkNums)
 		getline(std::cin, userInput);
 		if (_isValid(userInput, checkNums))
 			break;
+		else if (!userInput.empty())
+			std::cout << "Invalid input" << std::endl;
 		if (std::cin.eof())
 			break ;
 	}
